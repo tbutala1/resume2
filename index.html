@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: #4a6fa5;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        .subtitle {
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+        
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #555;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        section {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .profile-img {
+            max-width: 200px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 1rem auto;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill-tag {
+            background-color: #e0e0e0;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+        
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .project-card {
+            border: 1px solid #eee;
+            border-radius: 5px;
+            padding: 15px;
+            transition: transform 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <p class="subtitle">Web Developer & Designer</p>
+    </header>
+    
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="/api/placeholder/200/200" alt="Profile photo" class="profile-img">
+            <p>Hello! I'm a passionate web developer with expertise in creating responsive and user-friendly websites. I enjoy solving complex problems and turning ideas into reality through code.</p>
+            <p>When I'm not coding, you can find me hiking in the mountains, reading science fiction, or experimenting with new recipes in the kitchen.</p>
+        </section>
+        
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">UI/UX Design</span>
+                <span class="skill-tag">Responsive Design</span>
+                <span class="skill-tag">Git</span>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>E-commerce Website</h3>
+                    <p>A responsive e-commerce platform built with React and Node.js with payment integration.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Weather Application</h3>
+                    <p>A weather forecasting app that uses API integration to display current and future weather conditions.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>A personal portfolio website showcasing my skills and projects (like this one).</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out if you'd like to collaborate on a project or just want to connect!</p>
+            <p>Email: your.email@example.com</p>
+            <p>LinkedIn: linkedin.com/in/yourname</p>
+            <p>GitHub: github.com/yourusername</p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
